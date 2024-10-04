@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>iNethi App Store Project</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                AOS.init();
+            });
+        </script>
+        
+   
+    
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- CSS Styling and Animations -->
+    <style>
+        body {
+            background: url('network.svg') center center no-repeat;
+            background-attachment: fixed;
+            /* Makes the background image static */
+            background-size: cover;
+        }
+       
+        .text-aligned {
+    text-align: justify; /* Aligns text for better readability */
+    margin: 0;          /* Removes any unintended margins */
+    padding: 0;         /* Removes any unwanted padding */
+    line-height: 1.6;   /* Increases line spacing for easier reading */
+    text-indent: 1em;   /* Indent the first line for paragraph distinction */
+}
+
+
+
+        .img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+
+} 
+
+        @keyframes fadeInBackground {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .hero {
+            animation: fadeInBackground 3s forwards;
+            /* Set background to be fixed so it stays visible */
+            background-attachment: fixed;
+        }
+
+        @keyframes fadeOutForeground {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+
+            100% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+        }
+
+        .foreground-content {
+            animation: fadeOutForeground 3s forwards;
+        }
+
+        .even-spacing {
+            padding-top: 10px;
+            /* Reduced padding */
+            padding-bottom: 10px;
+            /* Reduced padding */
+            padding-left: 15%;
+            /* Add left padding */
+            padding-right: 15%;
+            /* Add right padding */
+            margin-top: 15px;
+            /* Smaller margin to tighten the space between sections */
+            margin-bottom: 15px;
+            /* Smaller margin to tighten the space between sections */
+            text-align: center;
+            /* Center text within the div */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">Inethi Mobile Application</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home<br></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Digital Wallet</a></li>
+                    <li><a href="">HotSpot Map</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+    </header><!-- End Header -->
+
+    <main class="main">
+
+        <!-- CSS Styling and Animations -->
+
+        <section id="hero" class="hero section"
+            style="background: url('assets/img/acn.jpg') center center no-repeat; background-size: cover; height: 100vh; position: relative;">
+
+            <!-- Background Overlay -->
+            <div class="background-overlay"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(250, 248, 248, 0.356); z-index: 1;">
+            </div>
+
+            <!-- Foreground Content -->
+            <div class="container foreground-content"
+                style="position: relative; z-index: 2; padding: 30px; border-radius: 10px; margin-top: 50px; animation: fadeOutForeground 3s forwards;">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-9 text-center">
+                        <h1 style="color: #124265; ">iNethi Network Insight</h1>
+                        <h2 style="color: #124265;">
+                            Network Status, Hotspot Locations, and Voucher Management
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#about" class="btn-get-started"
+                        style="background: #007bff; color: #ffffff; padding: 15px 30px; border-radius: 25px; text-decoration: none;">Start
+                        Reading</a>
+                </div>
+            </div>
+        </section>
+        <div id="about">
+            <p></p>
+
+        </div>
+
+
+        <!-- ======= Design Process Section ======= -->
+        <div class="even-spacing">
+            <div>
+                <div >
+                    <h2>About the iNethi App Visibility
+                    </h2>
+                  <p class="text-align-start" data-aos="fade-up">The iNethi Map and Voucher Tracking platform was developed to address the challenge of underutilization of local services within the Ocean View Community Wireless Network (CWN) in Cape Town, South Africa. While the network provides residents with affordable access to essential digital resources such as community radio, educational content, and local business services, these offerings are often overlooked. Many community members continue to rely on expensive mobile data, unaware of the local network’s capabilities and struggling with the complexity of managing internet vouchers, which prevents them from fully benefiting from the local service.</p>
+                  <p class="text-align-start " data-aos="fade-up">Recognizing these barriers, the iNethi Map and Voucher Tracking platform aims to increase engagement and simplify access to the network by providing a centralized interface that integrates real-time network status, hotspot locations, and easy voucher management. The platform’s interactive map enables users to quickly identify available Wi-Fi hotspots, view the status of each node, and make informed decisions about their connectivity. Additionally, by offering clear visibility into voucher balances and usage, the system reduces confusion around data management and encourages more frequent use of iNethi’s local services.</p>
+                  <p class="text-align-start" data-aos="fade-up">Through this solution, the iNethi Map and Voucher Tracking platform not only enhances service visibility and usability but also empowers the community to take full advantage of the affordable and valuable resources available within the network. By bridging the gap between network awareness and access, the platform seeks to transform how residents utilize the local infrastructure, promoting a stronger and more connected digital community in Ocean View.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="even-spacing">
+            <div>
+                <h2>Context</h2>
+              <p class="text-align-start" data-aos="fade-up">The Ocean View Community Wireless Network (CWN) was established to bridge the digital divide by providing affordable internet access and localized digital services to residents of the Ocean View community in Cape Town, South Africa. This community-driven initiative offers a unique solution to the high cost of mobile data by enabling residents to access essential content through local Wi-Fi hotspots at a fraction of the cost. However, despite these efforts, the network remains underutilized, with many residents unaware of the available services or unable to access them efficiently.</p>
+              <p class="text-align-start" data-aos="fade-up">Previous studies and community workshops identified several key challenges contributing to this underutilization: a lack of visibility into hotspot locations, limited information on service availability, and complex voucher management. Many users expressed frustration with the difficulty of finding active network nodes and managing their internet vouchers, which discouraged engagement with the network’s offerings. As a result, the Ocean View CWN is not reaching its full potential, with residents still depending on expensive mobile data to access information and services.</p>
+              <p class="text-align-start" data-aos="fade-up">To address these gaps, the iNethi Map and Voucher Tracking platform was developed as part of a broader strategy to improve service awareness, simplify connectivity, and enhance the user experience. By providing real-time insights into network status, making hotspot locations visible through an interactive map, and streamlining voucher management, the platform aims to empower residents to make full use of the affordable resources available within the community network. This solution is expected to not only increase local service usage but also foster a greater sense of digital inclusion and participation within Ocean View.</p>
+            </div>
+
+        </div>
+
+
+        <!-- ======= Design Process Section ======= -->
+        <div class="even-spacing" data-aos="fade-up">
+            <div>
+                <h2>Design Process and Methodology</h2>
+
+                <h3>Community-Centric Design Approach</h3>
+              <p class="text-align-start" data-aos="fade-right">The iNethi Map and Voucher Tracking platform was developed using a <strong>Participatory Design</strong> methodology that prioritized user engagement and community input. This ensured that the platform addressed the real-world challenges faced by residents in the Ocean View community. Through a series of structured workshops, focus group discussions, and iterative testing, the platform evolved to meet both technical requirements and community needs. This collaborative process fostered a strong sense of ownership among participants, enhancing the relevance and usability of the solution.</p>
+                <h3>Project Management</h3>
+              <p class="text-align-start" data-aos="fade-left">The study initially adopted an Agile project management framework using Scrum, but due to the need to
+                    align workshops with the community’s schedule and delays in ethics clearance, Action Research proved
+                    more effective. This approach offered the necessary flexibility and adaptability, aligning well with
+                    projects needing ongoing community engagement.</p>
+                <h3> Workshops in Ocean View</h3>
+            </div>
+            <table border="1" style="width:100%; border-collapse: collapse; text-align: left; margin-top: 20px;" data-aos="fade-up">
+                <thead>
+                    <tr style="background-color: #f2f2f2; border-bottom: 2px solid #ddd;">
+                        <th style="padding: 10px;">Date</th>
+                        <th style="padding: 10px;">Workshop</th>
+                        <th style="padding: 10px;">Activities</th>
+                        <th style="padding: 10px;">Outcomes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px;">09/08/2024</td>
+                        <td style="padding: 10px;">Workshop One</td>
+                        <td style="padding: 10px;">Introduced the initial prototype of the iNethi app. Engaged participants in the co-design process by gathering feedback on features, usability, and the overall interface. Discussed issues related to digital connectivity in the community.</td>
+                        <td style="padding: 10px;">Participants were able to identify their primary needs and suggested features for the app. They highlighted confusion around data usage and connection status. Feedback was gathered to refine the map feature and improve data usage tracking.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">13/08/2024</td>
+                        <td style="padding: 10px;">Workshop Two</td>
+                        <td style="padding: 10px;">Tested the updated version of the app. Participants interacted with the app, focusing on navigating the map, understanding node status, and monitoring data usage. Conducted cognitive walkthroughs to capture user thought processes and challenges.</td>
+                        <td style="padding: 10px;">Users found the updated features easier to navigate but suggested clearer labels for data usage and connection status. Feedback indicated a need for visual aids like progress bars and status icons to enhance clarity and usability.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">20/08/2024</td>
+                        <td style="padding: 10px;">Workshop Three</td>
+                        <td style="padding: 10px;">Tested the final version of the iNethi app in a real-world setting. Participants assessed the clarity of the network status indicators, data tracking, and overall usability of the app in a simulated environment.</td>
+                        <td style="padding: 10px;">Participants provided positive feedback on the usability improvements, particularly the connection status indicators and map feature. However, challenges with installation due to device compatibility were noted.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+            <div style="padding-top:  15px;" data-aos="fade-down">
+                <h3>
+                    Co Design artifacts
+                </h3>
+                <p>Participants’ designs of the app store interface</p>
+                <div>
+                    <div class="section-title">
+                        <img src="assets/img/mapDrawn.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/mapDrawn2.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/Figma1.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/Figma2.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/figma3.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/Hotspot.png" style="height: 50vh;" width="25%" class="img-fluid" alt="">ß
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- ======= Results Section ======= -->
+        
+        
+        <section id="results" class="even-spacing gy-4 mb-5" data-aos="fade-down">
+            <div class="section-title">
+                <h2>Results</h2>
+            </div>
+          <p class="text-align-start">The iNethi app demonstrated significant improvement in user engagement and usability during structured co-design workshops. Participants responded positively to the new map feature, which allowed them to visualize network nodes and track their connection status. The introduction of clearer data usage tracking, such as progress bars and redesigned labels, addressed previous confusion and enhanced user satisfaction. Despite the success in workshop settings, long-term engagement remained a challenge due to limited offline functionality and the need for further refinement in communicating connectivity status.</p>
+
+            <div>
+                <img src="assets/img/F3.jpeg" style="height: 60vh;" width="20%" class="img-fluid" alt="">
+                <img src="assets/img/F4.jpeg" style="height: 60vh;" width="20%" class="img-fluid" alt="">
+                <img src="assets/img/F2.png" style="height: 60vh;" width="20%" class="img-fluid" alt="">
+                <img src="assets/img/F1" style="height: 60vh;" width="20%" class="img-fluid" alt="">
+                <img src="assets/img/F5.jpeg" style="height: 60vh;" width="20%" class="img-fluid  .imgphones" alt="">
+
+            </div>
+        </section>
+
+        <section id="results" class="even-spacing gy-4 mb-5" data-aos="fade-down">
+            <div class="section-title">
+                <h2>Data Insights</h2>
+            </div>
+          <p class="text-align-start">The data collected during the workshops revealed several key patterns in user interaction and behavior. The most frequently accessed feature was the map tool, with participants actively using it to locate network nodes and monitor their connection status. The tracked data also showed that users spent more time on features with visual feedback, such as the data usage progress bar and real-time node status indicators. However, the data highlighted a common issue where users were uncertain about their overall network connectivity, spending extended time on screens with ambiguous status messages. This indicated a need for clearer communication of network conditions and simplified navigation between features. The insights gained from these observations guided further refinements to improve usability and address confusion around connection status and data usage tracking.</p>
+    
+            <div>
+                <img src="assets/img/Data1.png" style="height: 60vh;" width="45%" class="img-fluid .img " alt="">
+                <img src="assets/img/Data2.png" style="height: 60vh;" width="45%" class="img-fluid .img " alt="">
+            </div>  
+            <div>  <img src="assets/img/Data3.png" style="height: 60vh;" width="45%" class="img-fluid .img " alt="">
+                <img src="assets/img/Data4.png" style="height: 60vh;" width="45%" class="img-fluid .img " alt="">
+                <!-- <img src="assets/img/Data5.png" style="height: 60vh;" width="20%" class="img-fluid  .imgphones" alt=""> -->
+    
+            </div>
+        </section>
+
+        <!-- ======= Acknowledgement Section ======= -->
+        <section id="acknowledgement" class="even-spacing" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Acknowledgement</h2>
+            </div>
+            <p class="align-left">We would like to express our gratitude to the Ocean View community for their enthusiastic participation
+                and invaluable
+                contributions throughout the development of the iNethi App Store. Special thanks go to Black Equations
+                and its team, led
+                by Ganief Manuel, for their support in managing the community network and facilitating workshops. This
+                project would not
+                have been possible without the guidance and mentorship of our supervisor, Melissa Desmore, whose
+                insights greatly shaped
+                the research and development process.
+
+                We also acknowledge the University of Cape Town for providing resources
+                required to conduct
+                this study, and extend our thanks to the iNethi organization for creating the foundational
+                infrastructure that made this
+                project a reality.</p>
+        </section>
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <!-- Footer Section from Index Page -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>iNethi Mobile App</h3>
+                    <p>Bridging the digital divide for underserved communities.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact Us</h4>
+                    <p>
+                        University of Cape Town<br>
+                        Rondebosch, Cape Town, 7700<br>
+                        South Africa<br>
+                        <strong>Phone:</strong> +27 21 650 9111<br>
+                        <strong>Email:</strong> info@inethi.uct.ac.za<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
