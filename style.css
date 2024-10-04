@@ -1,0 +1,6 @@
+.sub-section-title {
+    color: grey;
+    font-size: 22px;
+    font-weight: normal; /* Makes the text less bold */
+    margin-bottom: 20px;
+}
