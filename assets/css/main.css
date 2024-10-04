@@ -55,6 +55,34 @@
   height: 100%;
   object-fit: cover;
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  gap: 10px; /* Adjusts the gap between images */
+  width: 100%; /* Ensures the grid spans full width */
+}
+
+.image-container2 {
+  position: relative;
+  width: 100%; /* Full width of the grid item */
+  padding-top: 100%; /* Makes the container square */
+  overflow: hidden;
+}
+
+.image-container2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Control the size of the images with a max-height if needed */
+.image-container2 {
+  max-width: 300px; /* Set the max width of the squares */
+  max-height: 300px; /* Set the max height of the squares */
+}
 
 .service-item:hover .icon svg path {
   fill: blue;
@@ -66,6 +94,57 @@
 
 .service-item:hover .icon svg text {
   fill: blue;
+}
+/* General Styles */
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Tab Styles */
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Tab Pane Styles */
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.tab-pane h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -975,6 +1054,133 @@ section,
   }
 
   .hero .icon-box:hover .title a {
+    color: var(--accent-color);
+  }
+}
+.hero1 {
+  width: 100%;
+  min-height: calc(60vh - 100px); /* Adjust this value for a shorter height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0; /* Reduced padding to lessen vertical space */
+  overflow: hidden;
+}
+
+.hero1:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero1 img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero1 .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero1 h1 {
+  margin: 0;
+  font-size: 48px; /* Adjust font size if needed */
+  font-weight: 700;
+  line-height: 64px; /* Adjust line height if needed */
+}
+
+.hero1 p {
+  margin: 10px 0 0 0;
+  font-size: 20px; /* Adjust font size if needed */
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+@media (max-width: 992px) {
+  .hero1 h1 {
+    font-size: 24px; /* Adjusted for smaller screens */
+    line-height: 32px; /* Adjusted for smaller screens */
+  }
+
+  .hero1 p {
+    font-size: 16px; /* Adjusted for smaller screens */
+    line-height: 20px; /* Adjusted for smaller screens */
+  }
+}
+
+/* Button Styles */
+.hero1 .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 12px 40px; /* Adjust padding for a smaller button */
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+.hero1 .btn-get-started:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+/* Icon Box Styles */
+.hero1 .icon-box {
+  background-color: var(--surface-color);
+  padding: 40px 30px; /* Adjust padding if needed */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.hero1 .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.hero1 .icon-box .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.hero1 .icon-box .description {
+  font-size: 15px;
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.hero1 .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+@media (min-width: 640px) {
+  .hero1 .icon-box:hover {
+    transform: scale(1.08);
+  }
+
+  .hero1 .icon-box:hover .title a {
     color: var(--accent-color);
   }
 }
