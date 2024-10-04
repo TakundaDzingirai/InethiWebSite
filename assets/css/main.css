@@ -39,38 +39,21 @@
   --nav-dropdown-hover-color: #2487ce; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 /* Wallet Page */
-.services .service-item {
-  padding: 40px;
-  background: #fff;
+.image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Adjust this value to change the aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.services .service-item .icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  color: #0077be;
-  font-size: 36px;
-}
-
-.services .service-item h3 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-  color: #0077be;
-}
-
-.services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  object-fit: cover;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
