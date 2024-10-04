@@ -146,6 +146,31 @@
       text-overflow: ellipsis;
       border-color: white;
     }
+    .about h2 {
+    color: #1e4b6d;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about p, .about li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about .text-primary {
+    color: #1e4b6d !important;
+}
+
+.about .btn-primary {
+    background-color: #1e4b6d;
+    border-color: #1e4b6d;
+}
+
+.about .btn-primary:hover {
+    background-color: #163754;
+    border-color: #163754;
+}
   </style>
 
 <body class="index-page">
@@ -239,45 +264,53 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
       <div class="container">
-
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold text-primary">CONTEXT AND BACKGROUND</h2>
+          </div>
+        </div>
         <div class="row gy-4">
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
+          <div class="col-lg-6">
+            <p class="fw-bold">
+              South Africa's digital landscape is characterized by <span class="text-primary">unequal internet coverage</span> and
+              <span class="text-primary">inflated data costs</span>, leaving many without internet access. The iNethi Mobile Application
+              project addresses this digital divide in Ocean View, Cape Town.
             </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+            <p>
+              iNethi is a software platform that supports <span class="text-primary">local service hosting</span> and
+              <span class="text-primary">network management</span> of Community Wireless Networks (CWNs). These networks are
+              <span class="text-primary">community-organized</span> and maintained, connecting underserved communities to the internet
+              and offering <span class="text-primary">zero-rated local services</span>.
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>iNethi's voucher system offers data at <span class="fw-bold">R20 per gigabyte</span>, compared to R20 per 125MB from typical providers.</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Currently deployed in Ocean View, Sweetwaters, Ga-Dikgale, and Khayelitsha.</li>
             </ul>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          <div class="col-lg-6">
+            <p>
+              Ocean View is an under-resourced community where 16% live in informal dwellings and 48% earn R3200 or less monthly.
+              This <span class="text-primary">precludes</span> many <span class="text-primary">residents</span> from <span class="text-primary">accessing the internet</span>.
+              Despite challenges, the community is vibrant with young artists, activists, and entrepreneurs.
+            </p>
+            <p>
+              The iNethi Mobile Application aims to increase utilization of local services by providing a unified platform.
+              It integrates all local services into a user-friendly app supporting offline access and simplifying network management.
+              The project developed three new services:
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>A <span class="fw-bold">community radio</span></li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>A <span class="fw-bold">community exchange</span></li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>An <span class="fw-bold">AI business coach chatbot</span></li>
+            </ul>
+            <p class="mt-3">
+              <a href="https://www.inethi.org.za" class="btn btn-primary" target="_blank">Learn more about iNethi <i class="bi bi-arrow-right ms-2"></i></a>
+            </p>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
+    </section>
     <!-- Feature Section  -->
     <section id="about-alt" class="about-alt section">
 
