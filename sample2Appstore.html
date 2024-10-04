@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>iNethi App Store Project</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- CSS Styling and Animations -->
+    <style>
+        @keyframes fadeInBackground {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .hero {
+            animation: fadeInBackground 3s forwards;
+            /* Set background to be fixed so it stays visible */
+            background-attachment: fixed;
+        }
+
+        @keyframes fadeOutForeground {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+
+            100% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+        }
+
+        .foreground-content {
+            animation: fadeOutForeground 3s forwards;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">Inethi Mobile Application</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home<br></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Digital Wallet</a></li>
+                    <li><a href="">HotSpot Map</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+    </header><!-- End Header -->
+
+    <main class="main">
+
+        <!-- CSS Styling and Animations -->
+
+        <section id="hero" class="hero section"
+            style="background: url('assets/img/acn.jpg') center center no-repeat; background-size: cover; height: 100vh; position: relative;">
+
+            <!-- Background Overlay -->
+            <div class="background-overlay"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(250, 248, 248, 0.356); z-index: 1;">
+            </div>
+
+            <!-- Foreground Content -->
+            <div class="container foreground-content"
+                style="position: relative; z-index: 2; padding: 30px; border-radius: 10px; margin-top: 50px; animation: fadeOutForeground 3s forwards;">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-9 text-center">
+                        <h1 style="color: #124265; ">Welcome to the iNethi
+                            App Store
+                            Project</h1>
+                        <h2 style="color: #124265;">
+                            Exploring the Development and Impact of a Community App Store on a Local Wireless Network
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#about" class="btn-get-started"
+                        style="background: #007bff; color: #ffffff; padding: 15px 30px; border-radius: 25px; text-decoration: none;">Get
+                        Started</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======= Design Process Section ======= -->
+        <section id="design-process" class="container">
+            <div class="section-title">
+                <div id="about">
+                    <h2>About the iNethi App Store</h2>
+                    <p>The iNethi App Store is an innovative platform designed to enhance digital inclusion for
+                        underserved
+                        communities
+                        by providing localized apps and services. Developed for the Ocean View Community Wireless
+                        Network (CWN)
+                        in South
+                        Africa, the iNethi App Store empowers residents to access essential digital content, such as
+                        community
+                        radio and
+                        educational tools, even without active internet connectivity.</p>
+                    <p>This app store aims to tackle one of the most pressing challenges faced by low-income communities
+                        — the
+                        high cost
+                        of mobile internet and limited access to digital resources. By consolidating local services into
+                        a
+                        single,
+                        user-friendly interface, the iNethi App Store not only promotes local engagement but also
+                        fosters
+                        community
+                        development. With features like offline functionality and pre-installed apps, the platform
+                        ensures that
+                        critical
+                        digital services are accessible to everyone, irrespective of their connectivity status.</p>
+                    <p>Through a participatory design approach, the iNethi App Store was co-created with the community,
+                        making
+                        it a
+                        platform built for and by its users. Join us in exploring how technology can transform
+                        communities and
+                        bridge
+                        the digital divide.</p>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="design-process" class="container">
+            <div class="section-title">
+                <h2>Context</h2>
+                <p>The iNethi App Store project is focused on addressing digital access challenges in Ocean View, South
+                    Africa, a
+                    community with limited internet connectivity and high data costs. Partnering with Black Equations, a
+                    local
+                    Wireless Internet Service Provider (WISP), the project leverages the iNethi Community Wireless
+                    Network
+                    to offer
+                    zero-rated, locally-hosted services. This collaboration ensures that residents can access essential
+                    digital
+                    resources without incurring high costs.</p>
+                <p>The app store is built to provide a gateway to community-driven content, empowering residents to
+                    explore
+                    and
+                    download apps tailored to their needs, such as educational tools and local media. This approach is
+                    informed by
+                    similar initiatives like DakNet, which highlight the value of local networks in underserved regions
+                    but
+                    often
+                    lack sustained engagement. By focusing on usability, offline functionality, and local participation,
+                    the
+                    iNethi
+                    App Store aims to overcome these limitations and promote long-term digital inclusion.</p>
+
+            </div>
+        </section>
+
+
+        <!-- ======= Design Process Section ======= -->
+        <section id="design-process" class="container">
+            <div class="section-title">
+                <h2>Design Process and Methodology</h2>
+            </div>
+            <h3>Participatory Design, Action Research, and Cognitive Walkthrough</h3>
+            <p>This project combined Participatory Design (PD), Action Research (AR), and Cognitive Walkthroughs (CW).
+                Participatory Design involved deep collaboration with users, who actively contributed to the design
+                process to ensure the final product met their needs and context. Action Research structured the app’s
+                iterative development cycles, and Cognitive Walkthroughs were used in usability testing to evaluate how
+                easily new users could learn to interact with the app.</p>
+            <h3>Project Management</h3>
+            <p>The study initially adopted an Agile project management framework using Scrum, but due to the need to
+                align workshops with the community’s schedule and delays in ethics clearance, Action Research proved
+                more effective. This approach offered the necessary flexibility and adaptability, aligning well with
+                projects needing ongoing community engagement.</p>
+        </section>
+
+        <!-- ======= Results Section ======= -->
+        <section id="results" class="container">
+            <div class="section-title">
+                <h2>Results</h2>
+            </div>
+            <p>The iNethi App Store achieved high engagement during structured workshops, with participants actively
+                exploring the app store and providing valuable feedback. The inclusion of preinstalled apps proved to be
+                a crucial feature, particularly in contexts where network access is not guaranteed. However, the app
+                faced challenges in sustaining long-term engagement beyond the workshops, and limited awareness of the
+                app store's features hindered its broader adoption.</p>
+        </section>
+
+        <!-- ======= Acknowledgement Section ======= -->
+        <section id="acknowledgement" class="container">
+            <div class="section-title">
+                <h2>Acknowledgement</h2>
+            </div>
+            <p>[Edit this section to include your acknowledgments, thanking your supervisor, participants, and any
+                contributors to your research.]</p>
+        </section>
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <!-- Footer Section from Index Page -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>iNethi Mobile App</h3>
+                    <p>Bridging the digital divide for underserved communities.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact Us</h4>
+                    <p>
+                        A108 Adam Street<br>
+                        New York, NY 535022<br>
+                        United States<br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
