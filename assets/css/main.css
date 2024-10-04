@@ -175,7 +175,65 @@ p {
 :root {
   scroll-behavior: smooth;
 }
+/* Kroon Tab */
+#kroon-wallet .nav-tabs {
+  border-bottom: none;
+  background-color: rgb(18, 66, 101);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
 
+#kroon-wallet .nav-tabs .nav-link {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease;
+}
+
+#kroon-wallet .nav-tabs .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#kroon-wallet .nav-tabs .nav-link.active {
+  background-color: #fff;
+  color: rgb(18, 66, 101);
+  font-weight: bold;
+}
+
+#kroon-wallet .tab-content {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 30px;
+  margin-bottom: 0; /* Add this line */
+}
+
+#kroon-wallet .tab-pane h3 {
+  color: rgb(18, 66, 101);
+  margin-bottom: 20px;
+}
+
+#kroon-wallet .image-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 0; /* Add this line */
+}
+
+#kroon-wallet .image-container2 {
+  width: 32%;
+  margin-bottom: 0; /* Add this line */
+}
+
+#kroon-wallet .image-container2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block; /* Add this line */
+}
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
