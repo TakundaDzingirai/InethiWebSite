@@ -29,6 +29,13 @@
 
     <!-- CSS Styling and Animations -->
     <style>
+        body {
+            background: url('network.svg') center center no-repeat;
+            background-attachment: fixed;
+            /* Makes the background image static */
+            background-size: cover;
+        }
+
         @keyframes fadeInBackground {
             0% {
                 opacity: 0;
@@ -68,6 +75,23 @@
 
         .foreground-content {
             animation: fadeOutForeground 3s forwards;
+        }
+
+        .even-spacing {
+            padding-top: 10px;
+            /* Reduced padding */
+            padding-bottom: 10px;
+            /* Reduced padding */
+            padding-left: 15%;
+            /* Add left padding */
+            padding-right: 15%;
+            /* Add right padding */
+            margin-top: 15px;
+            /* Smaller margin to tighten the space between sections */
+            margin-bottom: 15px;
+            /* Smaller margin to tighten the space between sections */
+            text-align: center;
+            /* Center text within the div */
         }
     </style>
 
@@ -124,12 +148,16 @@
                 </div>
             </div>
         </section>
+        <div id="about">
+            <p></p>
+
+        </div>
 
 
         <!-- ======= Design Process Section ======= -->
-        <section id="design-process" class="container">
-            <div class="section-title">
-                <div id="about">
+        <div class="even-spacing">
+            <div>
+                <div>
                     <h2>About the iNethi App Store</h2>
                     <p>The iNethi App Store is an innovative platform designed to enhance digital inclusion for
                         underserved
@@ -166,10 +194,10 @@
                 </div>
             </div>
 
-        </section>
+        </div>
 
-        <section id="design-process" class="container">
-            <div class="section-title">
+        <div id="" class="even-spacing">
+            <div>
                 <h2>Context</h2>
                 <p>The iNethi App Store project is focused on addressing digital access challenges in Ocean View, South
                     Africa, a
@@ -196,12 +224,12 @@
 
             </div>
 
-        </section>
+        </div>
 
 
         <!-- ======= Design Process Section ======= -->
-        <section id="design-process" class="container">
-            <div class="section-title">
+        <section class="even-spacing">
+            <div>
                 <h2>Design Process and Methodology</h2>
 
                 <h3>Participatory Design, Action Research, and Cognitive Walkthrough</h3>
@@ -280,12 +308,12 @@
                 </h3>
                 <p>Participants’ designs of the app store interface</p>
                 <div>
-                    <div>
-                        <img src="assets/img/ds.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                        <img src="assets/img/dss.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
+                    <div class="section-title">
+                        <img src="assets/img/ds.jpeg" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/dss.jpeg" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="25%" class="img-fluid" alt="">
+                        <img src="assets/img/desin.jpeg" style="height: 50vh;" width="25%" class="img-fluid" alt="">
                         <img src="assets/img/dd.jpeg" style="height: 50vh" ; class="img-fluid" alt="">
 
 
@@ -297,7 +325,7 @@
         </section>
 
         <!-- ======= Results Section ======= -->
-        <section id="results" class="container">
+        <section id="results" class="even-spacing">
             <div class="section-title">
                 <h2>Results</h2>
             </div>
@@ -308,11 +336,11 @@
                 app store's features hindered its broader adoption.</p>
 
             <div>
-                <img src="assets/img/apsstore.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                <img src="assets/img/appstclean.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                <img src="assets/img/apprating.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                <img src="assets/img/appsearch.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
-                <img src="assets/img/appdwn.jpeg" style="height: 50vh;" width="20%" class="img-fluid" alt="">
+                <img src="assets/img/apsstore.jpeg" style="height: 60vh;" width="15%" class="img-fluid" alt="">
+                <img src="assets/img/appstclean.jpeg" style="height: 60vh;" width="15%" class="img-fluid" alt="">
+                <img src="assets/img/apprating.jpeg" style="height: 60vh;" width="15%" class="img-fluid" alt="">
+                <img src="assets/img/appsearch.jpeg" style="height: 60vh;" width="15%" class="img-fluid" alt="">
+                <img src="assets/img/appdwn.jpeg" style="height: 60vh;" width="15%" class="img-fluid" alt="">
 
             </div>
         </section>
