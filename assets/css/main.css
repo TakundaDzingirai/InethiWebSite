@@ -67,6 +67,57 @@
 .service-item:hover .icon svg text {
   fill: blue;
 }
+/* General Styles */
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Tab Styles */
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Tab Pane Styles */
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.tab-pane h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
