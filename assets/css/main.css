@@ -56,6 +56,18 @@
   object-fit: cover;
 }
 
+.service-item:hover .icon svg path {
+  fill: blue;
+}
+
+.service-item:hover .icon svg circle {
+  stroke: blue;
+}
+
+.service-item:hover .icon svg text {
+  fill: blue;
+}
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
@@ -1210,8 +1222,11 @@ section,
   height: 100%;
   padding: 60px 30px;
   text-align: center;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
   border-radius: 5px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .services .service-item .icon {
@@ -1255,6 +1270,8 @@ section,
 }
 
 .services .service-item:hover {
+  transform: scale(1.08);
+
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
