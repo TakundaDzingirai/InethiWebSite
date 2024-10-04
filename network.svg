@@ -1,25 +1,62 @@
 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <pattern id="meshPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-      <!-- Vertical Lines -->
-      <line x1="100" y1="0" x2="100" y2="200" stroke="#e0e0e0" stroke-width="1"/>
-      <!-- Horizontal Lines -->
-      <line x1="0" y1="100" x2="200" y2="100" stroke="#e0e0e0" stroke-width="1"/>
-      <!-- Diagonal Lines -->
-      <line x1="0" y1="0" x2="200" y2="200" stroke="#e0e0e0" stroke-width="1"/>
-      <line x1="200" y1="0" x2="0" y2="200" stroke="#e0e0e0" stroke-width="1"/>
-      <!-- Nodes -->
-      <circle cx="100" cy="100" r="4" fill="#ffffff"/>
-      <circle cx="100" cy="0" r="3" fill="#ffffff"/>
-      <circle cx="200" cy="100" r="3" fill="#ffffff"/>
-      <circle cx="100" cy="200" r="3" fill="#ffffff"/>
-      <circle cx="0" cy="100" r="3" fill="#ffffff"/>
-      <circle cx="0" cy="0" r="2" fill="#ffffff"/>
-      <circle cx="200" cy="0" r="2" fill="#ffffff"/>
-      <circle cx="200" cy="200" r="2" fill="#ffffff"/>
-      <circle cx="0" cy="200" r="2" fill="#ffffff"/>
+    <!-- Snowflake Pattern -->
+    <pattern id="snowflakePattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <!-- Snowflake Shape 1 -->
+      <g transform="translate(100, 100)">
+        <line x1="0" y1="0" x2="30" y2="0" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="0" y1="0" x2="15" y2="-26" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="0" y1="0" x2="-15" y2="-26" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="0" y1="0" x2="15" y2="26" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="0" y1="0" x2="-15" y2="26" stroke="#dcdcdc" stroke-width="1"/>
+        <!-- Additional branches -->
+        <line x1="15" y1="-26" x2="30" y2="-15" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="15" y1="26" x2="30" y2="15" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="-15" y1="-26" x2="-30" y2="-15" stroke="#dcdcdc" stroke-width="1"/>
+        <line x1="-15" y1="26" x2="-30" y2="15" stroke="#dcdcdc" stroke-width="1"/>
+        <!-- Central Circle -->
+        <circle cx="0" cy="0" r="4" fill="#f0f0f0"/>
+      </g>
+
+      <!-- Additional Snowflake Shapes in Corners -->
+      <g transform="translate(50, 50)">
+        <line x1="0" y1="0" x2="15" y2="0" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#f0f0f0"/>
+      </g>
+
+      <g transform="translate(150, 150)">
+        <line x1="0" y1="0" x2="15" y2="0" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#f0f0f0"/>
+      </g>
+      
+      <g transform="translate(150, 50)">
+        <line x1="0" y1="0" x2="15" y2="0" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#f0f0f0"/>
+      </g>
+
+      <g transform="translate(50, 150)">
+        <line x1="0" y1="0" x2="15" y2="0" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="-13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <line x1="0" y1="0" x2="-7.5" y2="13" stroke="#dcdcdc" stroke-width="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#f0f0f0"/>
+      </g>
     </pattern>
   </defs>
   
-  <rect width="100%" height="100%" fill="url(#meshPattern)" />
+  <!-- Main background rectangle applying the snowflake pattern -->
+  <rect width="100%" height="100%" fill="url(#snowflakePattern)" />
 </svg>
