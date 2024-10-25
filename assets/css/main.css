@@ -32,11 +32,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #124265; /* The default color of the main navmenu links */
-  --nav-hover-color: #2487ce; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #124265; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #124265; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #2487ce; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #124265; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 /* Wallet Page */
 .image-container {
@@ -85,15 +85,15 @@
 }
 
 .service-item:hover .icon svg path {
-  fill: blue;
+  fill: #124265;
 }
 
 .service-item:hover .icon svg circle {
-  stroke: blue;
+  stroke: #124265;
 }
 
 .service-item:hover .icon svg text {
-  fill: blue;
+  fill: #124265;
 }
 /* General Styles */
 .section-title h2 {
@@ -122,15 +122,15 @@ p {
 }
 
 .nav-link.active {
-  background-color: #007bff;
+  background-color: #124265;
   color: white;
-  border-color: #007bff;
+  border-color: #124265;
 }
 
 .nav-link:hover {
-  background-color: #0056b3;
+  background-color: #124265;
   color: white;
-  border-color: #0056b3;
+  border-color: #124265;
 }
 
 /* Tab Pane Styles */
@@ -163,11 +163,11 @@ p {
 }
 
 .accent-background {
-  --background-color: #2487ce;
+  --background-color: #124265;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
-  --surface-color: #469fdf;
+  --surface-color: #124265;
   --contrast-color: #ffffff;
 }
 
