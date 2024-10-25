@@ -30,6 +30,59 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
+      .section-title {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .section-title h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #4a90e2;
+  }
+  
+  .section-title .image-container {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .section-title img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+  
+  .section-title p {
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: justify;
+  }
     /* General Icon Box Styling */
     .icon-box {
       background: #ffffff;
@@ -219,7 +272,6 @@
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-xl-7 col-lg-9 text-center">
             <h1>iNethi Mobile Application project 2024</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
           </div>
         </div>
         <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
@@ -462,61 +514,58 @@
             </div>
           </div>
         </div>
-
-
-        <!-- Stats Section -->
-        <section id="stats" class="stats section light-background">
-
+        <section id="stats" class="stats section light-background py-5">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-              <div class="col-lg-3 col-md-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="19" data-purecounter-duration="1"
-                    class="purecounter"></span>
-                  <p>Total number of Participants</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-md-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
-                    class="purecounter"></span>
-                  <p>Total number of Workshops </p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-md-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
-                    class="purecounter"></span>
-                  <p>Worskshop duration</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-
-
-            </div>
-
+              <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item d-flex flex-column justify-content-center align-items-center h-100 p-4 rounded">
+                          <span data-purecounter-start="0" 
+                                data-purecounter-end="19" 
+                                data-purecounter-duration="1"
+                                class="purecounter display-4 fw-bold mb-2">19</span>
+                          <p class="text-center mb-0">Total number of Participants</p>
+                      </div>
+                  </div>
+      
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item d-flex flex-column justify-content-center align-items-center h-100 p-4 rounded">
+                          <span data-purecounter-start="0" 
+                                data-purecounter-end="3" 
+                                data-purecounter-duration="1"
+                                class="purecounter display-4 fw-bold mb-2">3</span>
+                          <p class="text-center mb-0">Total number of Workshops</p>
+                      </div>
+                  </div>
+      
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item d-flex flex-column justify-content-center align-items-center h-100 p-4 rounded">
+                          <span data-purecounter-start="0" 
+                                data-purecounter-end="3" 
+                                data-purecounter-duration="1"
+                                class="purecounter display-4 fw-bold mb-2">3</span>
+                          <p class="text-center mb-0">Workshop duration</p>
+                      </div>
+                  </div>
+              </div>
           </div>
+      </section>
 
-        </section>
-        <div>
-          <h3>Our Team, Illustrated</h3>
-          <img src="assets/img/teamArt.jpeg" alt="">
-          <p>
-            This vibrant drawing, drawn by our Professor’s daughter during our first workshop, captures the
-            collaborative
-            spirit of our project. It
-            symbolizes the teamwork, creativity, and shared vision that drive the iNethi App initiative.It reminds us
-            that
-            community and collaboration are at the heart of every innovation</p>
-        </div>
-
-    </section><!-- End Sevices Section -->
-
-
+        <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center py-5">
+          <div class="text-center" style="max-width: 800px;">
+              <h3 class="display-5 mb-5 fw-bold">Our Team Illustrated</h3>
+              
+              <div class="d-flex justify-content-center align-items-center mb-5">
+                  <img src="assets/img/teamArt.jpeg" alt="Team Illustration" class="img-fluid rounded shadow-sm" style="max-width: 600px;">
+              </div>
+              
+              <p class="text-muted">
+                  This vibrant drawing, drawn by our Professor's daughter during our first workshop, captures the collaborative
+                  spirit of our project. It symbolizes the teamwork, creativity, and shared vision that drive the iNethi App initiative. It reminds us that
+                  community and collaboration are at the heart of every innovation.
+              </p>
+          </div>
+      </div>
+       
 
 
     <!-- Team Section -->
@@ -644,56 +693,81 @@
       </div>
     </section>
 
+  <footer id="footer" class="py-5" style="background-color: rgb(246, 250, 253)">
+    <div class="footer-top py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-contact text-center text-md-start">
+                      <div class="d-flex justify-content-center justify-content-md-start">
+                        <img src="assets/img/UCT logo circular blue large (1).png" alt="UCT Logo" width="150" class="img-fluid">
+                    </div>
+                        <p class="mt-4">
+                            <strong>Phone:</strong> +27 21 650 2663<br>
+                            <strong>Email:</strong> dept@cs.uct.ac.za<br>
+                            <strong>Website:</strong> www.sit.uct.ac.za
+                        </p>
+                       
+                    </div>
+                </div>
 
-  </main>
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h4 class="mb-4 text-center text-md-start">Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#context" class="text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>
+                                Context and Background
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#appstore" class="text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>
+                                Appstore
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#aabout-video2" class="text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>
+                                HotSpot Map
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#about-video3" class="text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>
+                                Digital Wallet
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#team" class="text-decoration-none d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>
+                                Team
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
+    <!-- Copyright Section -->
+    <div class="container mt-4">
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <p>
-              <strong>Phone:</strong> +27 21 650 2663<br>
-              <strong>Email:</strong> dept@cs.uct.ac.za<br>
-              <strong>Website:</strong> www.sit.uct.ac.za<br>
-              <br><img src="assets/img/UCT logo circular blue large (1).png" alt="Logo 1" width="150" class="img-fluid">
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#context">Context and Background</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#appstore">Appstore</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#aabout-video2">HotSpot Map</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about-video3">Digital Wallet</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
-            </ul>
-          </div>
-
+            <div class="col-12">
+                <div class="text-center">
+                    <div class="copyright mb-2">
+                        &copy; Copyright <strong><span>Inethi-App</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://bootstrapmade.com/" class="text-decoration-none">BootstrapMade</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
+</footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
